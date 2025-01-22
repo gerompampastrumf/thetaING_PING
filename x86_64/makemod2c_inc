@@ -1,0 +1,488 @@
+./CA1ih.c: ../mechanisms//CA1ih.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CA1ih.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./CA1ih.o: ./CA1ih.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./CA1ika.c: ../mechanisms//CA1ika.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CA1ika.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./CA1ika.o: ./CA1ika.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./CA1ikdr.c: ../mechanisms//CA1ikdr.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CA1ikdr.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./CA1ikdr.o: ./CA1ikdr.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./CA1ina.c: ../mechanisms//CA1ina.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "CA1ina.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./CA1ina.o: ./CA1ina.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ExpGABAab.c: ../mechanisms//ExpGABAab.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ExpGABAab.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ExpGABAab.o: ./ExpGABAab.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./Ih.c: ../mechanisms//Ih.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "Ih.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./Ih.o: ./Ih.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2Sid.c: ../mechanisms//MyExp2Sid.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2Sid.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./MyExp2Sid.o: ./MyExp2Sid.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2Sidnw.c: ../mechanisms//MyExp2Sidnw.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2Sidnw.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./MyExp2Sidnw.o: ./MyExp2Sidnw.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2Syn.c: ../mechanisms//MyExp2Syn.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2Syn.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./MyExp2Syn.o: ./MyExp2Syn.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynAlpha.c: ../mechanisms//MyExp2SynAlpha.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynAlpha.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./MyExp2SynAlpha.o: ./MyExp2SynAlpha.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynBB.c: ../mechanisms//MyExp2SynBB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynBB.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./MyExp2SynBB.o: ./MyExp2SynBB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynNMDA.c: ../mechanisms//MyExp2SynNMDA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynNMDA.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./MyExp2SynNMDA.o: ./MyExp2SynNMDA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynNMDABB.c: ../mechanisms//MyExp2SynNMDABB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynNMDABB.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./MyExp2SynNMDABB.o: ./MyExp2SynNMDABB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynNMDABB_a.c: ../mechanisms//MyExp2SynNMDABB_a.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynNMDABB_a.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./MyExp2SynNMDABB_a.o: ./MyExp2SynNMDABB_a.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./MyExp2SynNMDABB_b.c: ../mechanisms//MyExp2SynNMDABB_b.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "MyExp2SynNMDABB_b.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./MyExp2SynNMDABB_b.o: ./MyExp2SynNMDABB_b.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./SIN.c: ../mechanisms//SIN.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "SIN.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./SIN.o: ./SIN.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./bgka.c: ../mechanisms//bgka.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "bgka.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./bgka.o: ./bgka.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./burststim.c: ../mechanisms//burststim.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "burststim.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./burststim.o: ./burststim.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./caolmw.c: ../mechanisms//caolmw.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "caolmw.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./caolmw.o: ./caolmw.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ccanl.c: ../mechanisms//ccanl.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ccanl.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ccanl.o: ./ccanl.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_CavL.c: ../mechanisms//ch_CavL.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_CavL.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_CavL.o: ./ch_CavL.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_CavN.c: ../mechanisms//ch_CavN.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_CavN.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_CavN.o: ./ch_CavN.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_HCN.c: ../mechanisms//ch_HCN.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_HCN.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_HCN.o: ./ch_HCN.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_HCNolm.c: ../mechanisms//ch_HCNolm.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_HCNolm.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_HCNolm.o: ./ch_HCNolm.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_HCNp.c: ../mechanisms//ch_HCNp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_HCNp.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_HCNp.o: ./ch_HCNp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KCaS.c: ../mechanisms//ch_KCaS.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KCaS.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_KCaS.o: ./ch_KCaS.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Kdrfast.c: ../mechanisms//ch_Kdrfast.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Kdrfast.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Kdrfast.o: ./ch_Kdrfast.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Kdrfastngf.c: ../mechanisms//ch_Kdrfastngf.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Kdrfastngf.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Kdrfastngf.o: ./ch_Kdrfastngf.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Kdrp.c: ../mechanisms//ch_Kdrp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Kdrp.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Kdrp.o: ./ch_Kdrp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Kdrslow.c: ../mechanisms//ch_Kdrslow.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Kdrslow.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Kdrslow.o: ./ch_Kdrslow.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvA.c: ../mechanisms//ch_KvA.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KvA.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_KvA.o: ./ch_KvA.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvAdistp.c: ../mechanisms//ch_KvAdistp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KvAdistp.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_KvAdistp.o: ./ch_KvAdistp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvAngf.c: ../mechanisms//ch_KvAngf.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KvAngf.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_KvAngf.o: ./ch_KvAngf.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvAolm.c: ../mechanisms//ch_KvAolm.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KvAolm.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_KvAolm.o: ./ch_KvAolm.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvAproxp.c: ../mechanisms//ch_KvAproxp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KvAproxp.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_KvAproxp.o: ./ch_KvAproxp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvCaB.c: ../mechanisms//ch_KvCaB.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KvCaB.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_KvCaB.o: ./ch_KvCaB.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_KvGroup.c: ../mechanisms//ch_KvGroup.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_KvGroup.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_KvGroup.o: ./ch_KvGroup.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Nav.c: ../mechanisms//ch_Nav.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Nav.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Nav.o: ./ch_Nav.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Navaxonp.c: ../mechanisms//ch_Navaxonp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Navaxonp.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Navaxonp.o: ./ch_Navaxonp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Navbis.c: ../mechanisms//ch_Navbis.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Navbis.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Navbis.o: ./ch_Navbis.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Navcck.c: ../mechanisms//ch_Navcck.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Navcck.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Navcck.o: ./ch_Navcck.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Navngf.c: ../mechanisms//ch_Navngf.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Navngf.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Navngf.o: ./ch_Navngf.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_Navp.c: ../mechanisms//ch_Navp.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_Navp.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_Navp.o: ./ch_Navp.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ch_leak.c: ../mechanisms//ch_leak.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ch_leak.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ch_leak.o: ./ch_leak.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./constant.c: ../mechanisms//constant.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "constant.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./constant.o: ./constant.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./gskch.c: ../mechanisms//gskch.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "gskch.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./gskch.o: ./gskch.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./icaolmw.c: ../mechanisms//icaolmw.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "icaolmw.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./icaolmw.o: ./icaolmw.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./ichan2cck.c: ../mechanisms//ichan2cck.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "ichan2cck.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./ichan2cck.o: ./ichan2cck.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./iconc_Ca.c: ../mechanisms//iconc_Ca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "iconc_Ca.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./iconc_Ca.o: ./iconc_Ca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./iholmw.c: ../mechanisms//iholmw.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "iholmw.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./iholmw.o: ./iholmw.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./kcaolmw.c: ../mechanisms//kcaolmw.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kcaolmw.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./kcaolmw.o: ./kcaolmw.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./kdrbwb.c: ../mechanisms//kdrbwb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "kdrbwb.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./kdrbwb.o: ./kdrbwb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./lca.c: ../mechanisms//lca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "lca.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./lca.o: ./lca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./mykca.c: ../mechanisms//mykca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "mykca.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./mykca.o: ./mykca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./mynetstim.c: ../mechanisms//mynetstim.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "mynetstim.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./mynetstim.o: ./mynetstim.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./nafbwb.c: ../mechanisms//nafbwb.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "nafbwb.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./nafbwb.o: ./nafbwb.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./nca.c: ../mechanisms//nca.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "nca.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./nca.o: ./nca.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./positionfcns.c: ../mechanisms//positionfcns.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "positionfcns.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./positionfcns.o: ./positionfcns.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./regn_stim.c: ../mechanisms//regn_stim.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "regn_stim.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./regn_stim.o: ./regn_stim.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./vecstim.c: ../mechanisms//vecstim.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "vecstim.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./vecstim.o: ./vecstim.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
+./xtra.c: ../mechanisms//xtra.mod
+	@printf " -> $(C_GREEN)NMODL$(C_RESET) $<\\n"
+	(cd "../mechanisms";  MODLUNIT=$(NRNUNITS) $(NOCMODL) "xtra.mod" -o "/home/dimitrios/TFM/CA1model/x86_64")
+
+./xtra.o: ./xtra.c
+	@printf " -> $(C_GREEN)Compiling$(C_RESET) $<\\n"
+	$(COMPILE) -I"../mechanisms" $(INCLUDES) -fPIC -c $< -o $@
+
